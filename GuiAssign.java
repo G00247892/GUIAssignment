@@ -13,8 +13,6 @@ import javax.swing.border.EmptyBorder;
 import java.io.File;
 
 public class GuiAssign extends JFrame {
-
-
     
     private JButton clearField;
   
@@ -109,7 +107,6 @@ public class GuiAssign extends JFrame {
             }
         });   
 
-
         calculateFields.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
                 String princTemp = principal.getText();
@@ -148,9 +145,5 @@ public class GuiAssign extends JFrame {
         mainPane.add(interest);
 
         mainPane.add(calculateFields);	
-        
-
     }
- 
-   
 }
