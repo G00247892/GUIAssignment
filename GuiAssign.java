@@ -114,15 +114,11 @@ public class GuiAssign extends JFrame {
                 String timeTemp = time.getText();
                 int length = rateTemp.length();
                 int tempNum = (length*10)/length;
-                if(Float.valueOf(rateTemp) - Math.floor(Float.valueOf(rateTemp)) == 0 && rateTemp!="1"){
-                	System.out.println("test1");
-
-                	interest.setText ( interest.getText() + (Float.valueOf(princTemp)* (Float.valueOf(rateTemp)/tempNum) * Float.valueOf(timeTemp)));
-                }
-                else {
-                	interest.setText ( interest.getText() + (Float.valueOf(princTemp)* (Float.valueOf(rateTemp)) * Float.valueOf(timeTemp)));
-                	System.out.println("Test2");
-                }
+                if(Float.valueOf(rateTemp) - Math.floor(Float.valueOf(rateTemp)) == 0 && rateTemp!="1")
+                    interest.setText ( interest.getText() + (Float.valueOf(princTemp)* (Float.valueOf(rateTemp)/tempNum) * Float.valueOf(timeTemp)));
+                else 
+                    interest.setText ( interest.getText() + (Float.valueOf(princTemp)* (Float.valueOf(rateTemp)) * Float.valueOf(timeTemp)));
+                	                
                 calculateFields.setEnabled(false);
                 System.out.println(tempNum+"  "+ length);
             }
